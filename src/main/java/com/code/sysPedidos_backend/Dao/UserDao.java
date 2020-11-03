@@ -1,5 +1,12 @@
 package com.code.sysPedidos_backend.Dao;
 
-public interface UserDao {
+import java.util.List;
+import java.util.Map;
 
+import com.code.sysPedidos_backend.Entity.Persona;
+import com.code.sysPedidos_backend.Entity.User;
+
+public interface UserDao {
+	int create (User us,int id);
+	
 }
