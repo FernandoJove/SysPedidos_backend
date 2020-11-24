@@ -36,7 +36,7 @@ public class EmpresaDaoImp implements EmpresaDao{
 
 	@Override
 	public Empresa read(int id) {
-		String SQL = "select * from rol where idEmpresa  = ?";
+		String SQL = "select * from empresa where idEmpresa  = ?";
 		return jdbc.queryForObject(SQL, new Object[] {id},new BeanPropertyRowMapper<Empresa>(Empresa.class) );
 	}
 

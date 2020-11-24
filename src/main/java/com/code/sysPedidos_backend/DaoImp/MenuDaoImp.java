@@ -40,4 +40,12 @@ public class MenuDaoImp implements MenuDao{
 		return null;
 	}
 
+	@Override
+	public List<Map<String, Object>> selectByEmpresa(int id) {
+		// TODO Auto-generated method stub
+		System.out.println(id);
+		String SQL="select m.plato,m.precio,m.descripcion,m.url from menu as m,empresa as e where e.idempresa and m.idmenu = e.idempresa and m.idempresa= ?";
+		return jdbc.queryForList(SQL,id);
+	}
+
 }
