@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.code.sysPedidos_backend.Entity.Empresa;
 import com.code.sysPedidos_backend.Entity.Membresia;
+import com.code.sysPedidos_backend.Entity.Persona;
 
 @Repository
 public interface MembresiaDao {
@@ -14,4 +15,6 @@ public interface MembresiaDao {
 	List<Map<String,Object>> readAll();
 	
 	int create (Membresia mem,int id);
+
+
 }

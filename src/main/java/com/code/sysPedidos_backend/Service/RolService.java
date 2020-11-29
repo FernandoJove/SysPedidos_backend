@@ -1,13 +1,12 @@
-package com.code.sysPedidos_backend.Dao;
+package com.code.sysPedidos_backend.Service;
 
 import java.util.List;
 import java.util.Map;
 
 import com.code.sysPedidos_backend.Entity.Rol;
 
+public interface RolService {
 
-public interface RolDao {
-	
 	int create (Rol rol);
 	int update (Rol	 rol);
 	int delete (int id);
@@ -15,5 +14,4 @@ public interface RolDao {
 	List<Map<String,Object>> readAll();
 	
 	List<Map<String,Object>> readById(int id);
-
 }

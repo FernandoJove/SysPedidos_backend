@@ -23,5 +23,10 @@ public class Detalle_pedido {
 	public void setCostoProd(double costoProd) {
 		CostoProd = costoProd;
 	}
+	@Override
+	public String toString() {
+		return "Detalle_pedido [idDetalle_pedido=" + idDetalle_pedido + ", cantidad=" + cantidad + ", CostoProd="
+				+ CostoProd + "]";
+	}
 	
 }

@@ -17,5 +17,19 @@ public class UserDaoImp implements UserDao {
 		String SQL ="insert into User(Nomuser,Passuser,Estado,idPersona)values(?,?,?,?);  ";
 		return jdbc.update(SQL,us.getNomuser(),us.getPassuser(),us.getEstado(),id);
 	}
+
+	@Override
+	public int update(User us) {
+		// TODO Auto-generated method stub
+		String SQL ="update user set nomuser = ?, passuser =?";
+		return jdbc.update(SQL, us.getNomuser(), us.getPassuser());
+	}
+
+	@Override
+	public int delete(int id) {
+		// TODO Auto-generated method stub
+		String SQL=" update user set estado = 0 where idUsuario = ?";
+		return jdbc.update(SQL, id);
+	}
 	
 }

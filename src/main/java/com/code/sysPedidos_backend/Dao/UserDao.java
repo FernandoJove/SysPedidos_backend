@@ -8,5 +8,7 @@ import com.code.sysPedidos_backend.Entity.User;
 
 public interface UserDao {
 	int create (User us,int id);
+	int update (User us);
+	int delete (int id);
 	
 }

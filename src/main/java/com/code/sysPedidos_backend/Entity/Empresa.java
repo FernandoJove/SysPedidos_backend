@@ -8,6 +8,7 @@ public class Empresa {
 	public String RazonSocial;
 	public int estado;
 	public String direccion;
+	public String imagen;
 	public String getIdEmpresa() {
 		return idEmpresa;
 	}
@@ -44,6 +45,11 @@ public class Empresa {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
-	
+	public String getImagen() {
+		return imagen;
+	}
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
 	
 }

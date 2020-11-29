@@ -16,7 +16,7 @@ class SysPedidosBackendApplicationTests {
 
 	@Test
 	void contextLoads() {
-		System.out.println(pdao.selectByEmpresa(1));
+		System.out.println(pdao.delete(1));
 	}
 
 }

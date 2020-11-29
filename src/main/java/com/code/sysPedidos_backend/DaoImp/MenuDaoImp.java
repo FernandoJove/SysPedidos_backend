@@ -30,7 +30,8 @@ public class MenuDaoImp implements MenuDao{
 	@Override
 	public int delete(int id) {
 		// TODO Auto-generated method stub
-		return 0;
+		String SQL ="delete from menu where idmenu = ? ";
+		return jdbc.update(SQL, id);
 	}
 
 
