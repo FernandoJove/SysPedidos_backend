@@ -29,7 +29,7 @@ public class TrabajadorController {
 	}
 
 	@PutMapping("/{idEmp}/{idUsu}/{id}")
-	public int update(@PathVariable int idEmp, int idUsu, int idRol) {
+	public int update(@PathVariable int idEmp, @PathVariable int idUsu,@PathVariable int idRol, @PathVariable int id) {
 		// TODO Auto-generated method stub
 		return ts.update(idEmp, idUsu, idRol, id);
 	}

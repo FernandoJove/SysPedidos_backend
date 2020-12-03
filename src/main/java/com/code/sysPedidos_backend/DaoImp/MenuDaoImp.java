@@ -38,7 +38,8 @@ public class MenuDaoImp implements MenuDao{
 	@Override
 	public List<Map<String, Object>> readAll() {
 		// TODO Auto-generated method stub
-		return null;
+		String SQL ="select * from menu";
+		return jdbc.queryForList(SQL);
 	}
 
 	@Override
