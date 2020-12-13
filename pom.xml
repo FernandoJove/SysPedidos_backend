@@ -55,11 +55,6 @@
 			<artifactId>ojdbc8</artifactId>
 			<scope>19.6.0.0</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ucp</artifactId>
-			<scope>19.6.0.0</scope>
-		</dependency>
 		
 	</dependencies>
 

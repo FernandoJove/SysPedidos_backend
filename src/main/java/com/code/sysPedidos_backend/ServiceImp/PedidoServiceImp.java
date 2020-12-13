@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.code.sysPedidos_backend.Dao.PedidoDao;
+import com.code.sysPedidos_backend.Entity.Pedido;
 import com.code.sysPedidos_backend.Service.PedidoService;
 
 @Service
@@ -26,5 +27,17 @@ public class PedidoServiceImp implements PedidoService{
 		// TODO Auto-generated method stub
 		return pd.readById(idUsuario, idPedido);
 	}
+
+	@Override
+	public int SavePedido(Pedido pedido) {
+		// TODO Auto-generated method stub
+		return pd.SavePedido(pedido);
+	}
+
+	/*@Override
+	public void SavePedido(Pedido pedido) {
+		// TODO Auto-generated method stub
+		return pd.SavePedido(pedido);
+	}*/
 
 }

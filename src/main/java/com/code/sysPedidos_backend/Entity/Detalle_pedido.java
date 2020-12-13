@@ -4,7 +4,9 @@ public class Detalle_pedido {
 	
 	public String idDetalle_pedido;
 	public int cantidad;
-	public double CostoProd;
+	public float costoprod;
+	public int idPedidos;
+	public int idMenu;
 	public String getIdDetalle_pedido() {
 		return idDetalle_pedido;
 	}
@@ -17,16 +19,26 @@ public class Detalle_pedido {
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
 	}
-	public double getCostoProd() {
-		return CostoProd;
+	public float getCostoprod() {
+		return costoprod;
 	}
-	public void setCostoProd(double costoProd) {
-		CostoProd = costoProd;
+	public void setCostoprod(float costoprod) {
+		this.costoprod = costoprod;
 	}
-	@Override
-	public String toString() {
-		return "Detalle_pedido [idDetalle_pedido=" + idDetalle_pedido + ", cantidad=" + cantidad + ", CostoProd="
-				+ CostoProd + "]";
+	public int getIdPedidos() {
+		return idPedidos;
 	}
+	public void setIdPedidos(int idPedidos) {
+		this.idPedidos = idPedidos;
+	}
+	public int getIdMenu() {
+		return idMenu;
+	}
+	public void setIdMenu(int idMenu) {
+		this.idMenu = idMenu;
+	}
+	
+	
+	
 	
 }

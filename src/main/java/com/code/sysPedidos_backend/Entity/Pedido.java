@@ -4,28 +4,30 @@ import java.sql.Date;
 
 public class Pedido {
 	public String idPedido;
-	public Date fecha_pedido;
-	public String DirEntrega;
+	public String fecha_pedido;
+	public String direntrega;
 	public int estado;
-	public int MetodoCompra;
-	public double CostoTotal;
+	public int metodocompra;
+	public float costototal;
+	public int idUsuario;
+	public int idEmpresa;
 	public String getIdPedido() {
 		return idPedido;
 	}
 	public void setIdPedido(String idPedido) {
 		this.idPedido = idPedido;
 	}
-	public Date getFecha_pedido() {
+	public String getFecha_pedido() {
 		return fecha_pedido;
 	}
-	public void setFecha_pedido(Date fecha_pedido) {
+	public void setFecha_pedido(String fecha_pedido) {
 		this.fecha_pedido = fecha_pedido;
 	}
-	public String getDirEntrega() {
-		return DirEntrega;
+	public String getDirentrega() {
+		return direntrega;
 	}
-	public void setDirEntrega(String dirEntrega) {
-		DirEntrega = dirEntrega;
+	public void setDirentrega(String direntrega) {
+		this.direntrega = direntrega;
 	}
 	public int getEstado() {
 		return estado;
@@ -33,18 +35,31 @@ public class Pedido {
 	public void setEstado(int estado) {
 		this.estado = estado;
 	}
-	public int getMetodoCompra() {
-		return MetodoCompra;
+	public int getMetodocompra() {
+		return metodocompra;
 	}
-	public void setMetodoCompra(int metodoCompra) {
-		MetodoCompra = metodoCompra;
+	public void setMetodocompra(int metodocompra) {
+		this.metodocompra = metodocompra;
 	}
-	public double getCostoTotal() {
-		return CostoTotal;
+	public float getCostototal() {
+		return costototal;
 	}
-	public void setCostoTotal(double costoTotal) {
-		CostoTotal = costoTotal;
+	public void setCostototal(float costototal) {
+		this.costototal = costototal;
 	}
+	public int getIdUsuario() {
+		return idUsuario;
+	}
+	public void setIdUsuario(int idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+	public int getIdEmpresa() {
+		return idEmpresa;
+	}
+	public void setIdEmpresa(int idEmpresa) {
+		this.idEmpresa = idEmpresa;
+	}
+	
 	
 	
 
