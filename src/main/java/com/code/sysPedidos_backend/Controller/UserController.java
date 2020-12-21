@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.code.sysPedidos_backend.Entity.User;
+import com.code.sysPedidos_backend.Entity.Usuario;
 import com.code.sysPedidos_backend.Service.UserService;
 
 @RestController
@@ -20,13 +20,13 @@ public class UserController {
 	private UserService Uservice;
 
 	@PostMapping("/{id}")
-	public int create(@RequestBody User us, @PathVariable int id) {
+	public int create(@RequestBody Usuario us, @PathVariable int id) {
 		// TODO Auto-generated method stub
 		return Uservice.create(us, id);
 	}
 
 	@PutMapping("/")
-	public int update(@RequestBody User us) {
+	public int update(@RequestBody Usuario us) {
 		// TODO Auto-generated method stub
 		return Uservice.update(us);
 	}

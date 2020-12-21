@@ -3,6 +3,8 @@ package com.code.sysPedidos_backend.Dao;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.security.core.GrantedAuthority;
+
 import com.code.sysPedidos_backend.Entity.Rol;
 
 
@@ -15,5 +17,6 @@ public interface RolDao {
 	List<Map<String,Object>> readAll();
 	
 	List<Map<String,Object>> readById(int id);
+	List<GrantedAuthority> buscarRolUser(int iduser);
 
 }
