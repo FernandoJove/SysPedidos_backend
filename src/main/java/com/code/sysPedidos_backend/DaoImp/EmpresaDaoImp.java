@@ -43,7 +43,7 @@ public class EmpresaDaoImp implements EmpresaDao{
 	@Override
 	public List<Map<String, Object>> readAll() {
 
-		String SQL = "select * from Empresa";
+		String SQL = "select * from empresa";
 		return jdbc.queryForList(SQL);
 	}
 

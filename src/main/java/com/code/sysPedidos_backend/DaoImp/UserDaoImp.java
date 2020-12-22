@@ -51,7 +51,7 @@ public class UserDaoImp implements UserDao {
 	@Override
 	public Map<String, Object> datos(String username) {
 		// TODO Auto-generated method stub
-		String SQL="select p.nombre,p.apellidos,p.edad,p.telefono,p.correo,p.dni,r.nomrol from persona as p, usuario as u, trabajador as t,rol as r where u.idusuario=t.idusuario and t.idrol =r.idrol and p.idpersona =u.idpersona and u.username = ? ";
+		String SQL="select u.idusuario,p.nombre,p.apellidos,p.edad,p.telefono,p.correo,p.dni,r.nomrol from persona as p, usuario as u, trabajador as t,rol as r where u.idusuario=t.idusuario and t.idrol =r.idrol and p.idpersona =u.idpersona and u.username = ? ";
 				Map<String,Object> map = jdbc.queryForMap(SQL,username);
 		return map;
 	}
